@@ -12,9 +12,9 @@ export default function App() {
   });
 
   const handleVote = (type: VoteType) => {
-    setVotes((votes) => ({
-      ...votes,
-      [type]: votes[type] + 1,
+    setVotes((prev) => ({
+      ...prev,
+      [type]: prev[type] + 1,
     }));
   };
 
